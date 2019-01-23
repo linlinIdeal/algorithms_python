@@ -6,6 +6,10 @@ def main():
     sort.insertion_sort(insertion_array)
     print('insertion_sort result:')
     print(insertion_array)
-
-
+    print('---------------------------------')
+    selection_array = int_array[:]
+    sort.selection_sort(selection_array)
+    print('selection_array result:')
+    print(insertion_array)
+    print('---------------------------------')
 main()

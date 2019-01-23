@@ -1,6 +1,6 @@
 '''
 # insertion sort（插入排序）
-# time complexity (时间复杂度): O(n^2)
+# O(n^2)
 '''
 
 def insertion_sort(array):
@@ -11,4 +11,16 @@ def insertion_sort(array):
             array[i+1] = array[i]
             i -= 1
         array[i+1] = key
+
+'''
+# selection sort（选择排序）
+# O(n^2)
+'''
+def selection_sort(array):
+    for i in range(len(array)):
+        for j in range(i+1, len(array)):
+            if array[i] > array[j]:
+                temp_value = array[i] 
+                array[i] = array[j]
+                array[j] = temp_value
 
